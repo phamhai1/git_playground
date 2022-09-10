@@ -1,0 +1,7 @@
+            JObject jObj = JObject.Parse(File.ReadAllText(@"C:\Users\Admin\Desktop\test.json"));
+            int count = jObj.Count;
+            string firstLanguage = (string)jObj;
+            foreach (var package in jObj)
+            {
+                Console.WriteLine(package.Value);
+            }
